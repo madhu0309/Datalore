@@ -44,7 +44,7 @@ class DownloadData:
         matrix = self.append_matrix()
         endmatrix = self.append_end_matrix()
         a = np.array(matrix)
-        for ele in range(days):
+        for ele in range(self.days):
             a[ele][8] = "".join(endmatrix[ele])
         finallist = a.tolist()
         for i in range(self.days):
